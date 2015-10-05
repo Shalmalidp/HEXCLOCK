@@ -9,9 +9,9 @@ var seconds = time.getSeconds();
 //var textNode;
 var digit_min = (minutes <10) ? "0"+ minutes : minutes;
 var digit_sec = (seconds < 10) ? "0" + seconds : seconds;
-var currenttime = (hours + ":" +digit_min +":" + digit_sec);
+var currenttime = ("#"+hours+ ""+digit_min +""+digit_sec);
 //var textNode= document.createTextNode(currenttime);
-$('.clock-body').text(currenttime);
+$('.clock-body').text(currenttime).css('background-color', currenttime);
 },1000);
 
 
